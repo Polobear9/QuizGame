@@ -67,8 +67,8 @@ public class QuizMaker extends User {
 
         //this (for) sentence get a quizRange from this.quizRange [first you use a this maker method you can choose the Range.]
         for (int i = 0; i < getquizRange(); i++) {
-            int Number = ran.nextInt(getnumberRange() + 1);
-            int Number1 = ran.nextInt(getnumberRange() + 1);
+            int Number = ran.nextInt(getnumberRange()) + 1;
+            int Number1 = ran.nextInt(getnumberRange()) + 1;
 
             int Question = Number + Number1;
 
