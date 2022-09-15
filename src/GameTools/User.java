@@ -8,10 +8,10 @@ public class User {
     protected static String userName;
 
     //if user, use a this class. user must set a Name userself.
-    User() {
+    public void users() {
         System.out.println("Place Set the User Name : ");
         String userName = sc.nextLine();
-        setUserName(userName);
+        this.setUserName(userName);
 
     }
 
