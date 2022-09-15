@@ -23,6 +23,8 @@ public class QuizMaker extends User {
             case 3:
                 setnumberRange(50 + 1); // number will limit 1　~ 50.
                 break;
+            default:
+                break;
         }
 
         // after the sellect the Quiz Number Range, you can sellect the Quiz Question Range. how many question you want?
@@ -37,6 +39,8 @@ public class QuizMaker extends User {
                 break;
             case 3:
                 setquizRange(10); // 10 question user have.
+                break;
+            default:
                 break;
         }
 
