@@ -10,7 +10,7 @@ public class QuizMaker extends User {
     private static int quizRange;
 
     //when you use a this system. you can choose the Quiz Number Range and Quiz question Range.
-    QuizMaker() {
+    public static void QuizMakers() {
         System.out.println("Place Select the Number for Quiz Number Range : (1) 1 ~ 10 (2) 1 ~ 30 (3) 1 ~ 50");
         int range = sc.nextInt();
         switch (range) {
@@ -44,7 +44,7 @@ public class QuizMaker extends User {
                 break;
         }
 
-        this.maker();
+        maker();
     }
 
     //		---- > beens < ----
@@ -67,7 +67,7 @@ public class QuizMaker extends User {
 
 
     // you must use a user class instance ex : QuizMaker.maker(user1);
-    public void maker() {
+    public static void maker() {
 
         //this (for) sentence get a quizRange from this.quizRange [first you use a this maker method you can choose the Range.]
         for (int i = 0; i < getquizRange(); i++) {
