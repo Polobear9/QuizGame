@@ -12,6 +12,7 @@ public class User {
         System.out.println("Place Set the User Name : ");
         String userName = sc.nextLine();
         setUserName(userName);
+
     }
 
     public void setUserPoint(int userPoint) {
