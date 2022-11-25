@@ -87,19 +87,19 @@ public class QuizMaker extends User {
 
         //this (for) sentence get a quizRange from this.quizRange [first you use this maker method you can choose the Range.]
         for (int i = 0; i < getQuizQuestionRange(); i++) {
-            int Number = ran.nextInt(getNumberRange()) + 1;
-            int Number1 = ran.nextInt(getNumberRange()) + 1;
+            int firstNumber = ran.nextInt(getNumberRange()) + 1;
+            int secondNumber = ran.nextInt(getNumberRange()) + 1;
 
-            int Question = Number + Number1;
+            int QuestionAnswer = firstNumber + secondNumber;
 
 
             //Question is make by Random() class. and Question Number is use a (i) word from (for)sentence.
-            System.out.println("Quiz" + (i + 1) + " " + (Number) + " + " + (Number1) + " ?");
+            System.out.println("Quiz" + (i + 1) + " " + (firstNumber) + " + " + (secondNumber) + " ?");
             System.out.println("Place Enter the Answer the this Quiz : ");
 
             //is asnwer variable and Question variable -- > user is correct the answer. else user could not have a point.
             int answer = sc.nextInt();
-            if (answer == Question) {
+            if (answer == QuestionAnswer) {
                 user.addUserPoint(1);
                 System.out.println("Good !");
             } else {
